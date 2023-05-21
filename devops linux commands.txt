@@ -1,0 +1,52 @@
+find and user commands:
+rm -rf - to del folder forcefully
+
+grep commands: to search the word in a file diff styles   (global  regular expression print)
+	grep "word" filename - to search the word in a file
+	grep -n "word" filename - used to print the line numbers the word present
+	grep -c "word" filename - used for count the num of times the word is present
+	grep -i "word" filename - used to search the word both in capitals and small letters
+	grep -i "word" file1 file2 file3 - used to search a word in multiple files
+	grep -in "word" file1 file2 file3 - used to search a word in multiple files with line numbers
+
+useradd commands:
+	
+	adduser username - to add user ( a directory will automatically created when we create a user u can see using ll) 
+	cat /etc/passwd - to check weather the user is created or not(complete user list command)
+	su - username - to enter into the user
+	passwd username - to create password for a user
+	userdel username - to delete a user 
+	userdel -r username - to del user with directory
+	userdel -f username - to del user forcefully
+	groupadd grpname - to create a grp
+	cat /etc/group - to check list of grps
+	groupdel grpname - to del a group
+	
+permission commands:
+
+   user and group ownership permissions:
+	chown username filename - used to change the user for a file
+	chgrp groupname filename - used to change the grp for a file
+	chown username:groupname filename - used to change both user and group at a time
+	chown username:groupname foldername -R - used to change the owner and grpname for both folder and filename
+   
+   user and group permissions for a file(read write and execute)
+	
+	chmod 777 filename - used to assign read write excute permissions(read =4 write=2 xcute=1 4+2+1=7 fullpermissions)777=full permissions for user group and others
+	chmod 666 filename - read and write permissions refer above line
+	
+SEARCH COMMANDS :
+	
+	locate filename - used to locate the file in linux database
+	upadtedb - we have to update database before trying to locate any file
+	locate -i filename - for case sensitive
+	locate -c filename - for counting no of files
+
+Network commands:
+
+	telnet localhost portnumber - gives weather the portnumber running services or not
+
+
+
+`	
+	
